@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/halo/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/halo/static/js/main.eac3f7b2.chunk.js",
+    "main.js.map": "/halo/static/js/main.eac3f7b2.chunk.js.map",
+    "runtime-main.js": "/halo/static/js/runtime-main.7a4ca8c1.js",
+    "runtime-main.js.map": "/halo/static/js/runtime-main.7a4ca8c1.js.map",
+    "static/js/2.f5fbd754.chunk.js": "/halo/static/js/2.f5fbd754.chunk.js",
+    "static/js/2.f5fbd754.chunk.js.map": "/halo/static/js/2.f5fbd754.chunk.js.map",
+    "index.html": "/halo/index.html",
+    "precache-manifest.244f852b1c7aeca919a6f92a4a440fdb.js": "/halo/precache-manifest.244f852b1c7aeca919a6f92a4a440fdb.js",
+    "service-worker.js": "/halo/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/halo/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.f5fbd754.chunk.js.LICENSE.txt": "/halo/static/js/2.f5fbd754.chunk.js.LICENSE.txt",
+    "static/media/skyrise.jpg": "/halo/static/media/skyrise.1ff3464d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a4ca8c1.js",
+    "static/js/2.f5fbd754.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.eac3f7b2.chunk.js"
+  ]
+}
