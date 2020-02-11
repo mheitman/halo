@@ -12,6 +12,9 @@ import home from './assets/home.png'
 import kitchen from './assets/kitchen.jpg'
 import skyrise from './assets/skyrise.jpg'
 
+import house from './assets/iStock-house.jpg';
+import people from './assets/iStock-people.jpg';
+
 const useStyles = makeStyles({
   actionSections: {
     // display: 'flex',

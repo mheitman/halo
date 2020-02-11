@@ -20,22 +20,22 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/halo'>
           <Landing />
         </Route>
-        <Route path='/about'>
+        <Route path='/halo/about'>
           <About />
         </Route>
-        <Route path='/clients'>
+        <Route path='/halo/clients'>
           <Clients />
         </Route>
-        <Route path='/partners'>
+        <Route path='/halo/partners'>
           <Partners />
         </Route>
-        <Route path='/contact'>
+        <Route path='/halo/contact'>
           <Contact />
         </Route>
-        <Route path='/apply'>
+        <Route path='/halo/apply'>
           <Apply />
         </Route>
       </Switch>
