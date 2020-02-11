@@ -12,12 +12,15 @@ import home from './assets/home.png';
 import skyrise from './assets/skyrise.jpg';
 
 const useStyles = makeStyles({
-  container: {
-    display: 'flex',
-  },
   content: {
+    // display: 'flex',
+  },
+  page: {
     // marginTop: 120,
-    padding: '72px 64px',
+    padding: '72px 96px',
+    position: 'relative',
+    // left: 320,
+    marginLeft: 340,
   },
   header: {
     fontFamily: 'Avenir',
@@ -26,32 +29,48 @@ const useStyles = makeStyles({
     WebkitTextStroke: '3px',
   },
   root: {
-    margin: '0 calc(10% + 32px)',
-    maxWidth: 1200,
+    // margin: '0 calc(10% + 32px)',
+    // maxWidth: 1200,
     position: 'relative',
+    top: 72,
+    background: '#f7ece9',
+  },
+  container: {
+    // margin: '0 calc(10% + 32px)',
+    maxWidth: 1400,
+    // position: 'relative',
     top: 72,
   },
   sectionNavContainer: {
     textAlign: 'right',
-    marginTop: 152,
-    minWidth: 200,
-    position: 'sticky',
-    top: 220,
-    alignSelf: 'flex-start',
+    paddingTop: 220,
+    paddingRight: 64,
+    minWidth: 280,
+    // position: 'sticky',
+    // top: 220,
+    // alignSelf: 'flex-start',
+
+    position: 'fixed',
+    background: '#000527',
+    left: 0,
+    top: 0,
+    bottom: 0,
     // margin
   },
   sectionNavLink: {
-    color: '#6400ff',
+    // color: '#6400ff',
+    // color: '#000a4a',
+    color: 'white',
     fontSize: '20px',
     fontFamily: 'Avenir',
-    WebkitTextStroke: '2px',
+    WebkitTextStroke: '1px',
     margin: '12px 0',
     cursor: 'pointer',
   },
   sectionHeader: {
     fontSize: '24px',
     fontFamily: 'Avenir',
-    WebkitTextStroke: '2px',
+    WebkitTextStroke: '1px',
     margin: '32px 0 4px',
   },
   sectionText: {
@@ -104,10 +123,10 @@ function About() {
   }
 
   return (
-    <div>
     <div className={classes.root}>
+    <div className={classes.container}>
       <Appbar selected={0} />
-      <div className={classes.container}>
+      <div className={classes.content}>
         <div className={classes.sectionNavContainer}>
           <div className={classes.sectionNavLink} onClick={scrollToSection(0)}>
             Summary
@@ -122,7 +141,7 @@ function About() {
             FAQs
           </div>
         </div>
-        <div className={classes.content}>
+        <div className={classes.page}>
           <div className={classes.header}>
             About Halo
           </div>

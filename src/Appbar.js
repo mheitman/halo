@@ -3,7 +3,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import classnames from 'classnames';
-import Button from './Button.js';
+import { FilledButton } from './Button.js';
 
 // import './index.css';
 
@@ -77,7 +77,7 @@ function App({ selected }) {
           <Link to='/halo/contact'>Contact</Link>
         </div>
         <div className={classes.button}>
-        <Button href='/halo/apply'>Apply Now</Button>
+          <FilledButton href='/halo/apply'>Apply Now</FilledButton>
         </div>
       </div>
     </div>

@@ -14,6 +14,7 @@ import skyrise from './assets/skyrise.jpg';
 const useStyles = makeStyles({
   container: {
     display: 'flex',
+    paddingBottom: 120,
   },
   content: {
     // marginTop: 120,
@@ -41,7 +42,7 @@ const useStyles = makeStyles({
     // margin
   },
   sectionNavLink: {
-    color: '#6400ff',
+    color: '#000a4a',
     fontSize: '20px',
     fontFamily: 'Avenir',
     WebkitTextStroke: '2px',

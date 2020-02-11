@@ -108,8 +108,9 @@ const useStyles = makeStyles({
   	margin: '16px 8px',
   	// margin: '16px 0',
   	display: 'inline-block',
-    borderRadius: '12px',
-  	boxShadow: '0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)',
+    // borderRadius: '12px',
+  	// boxShadow: '0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)',
+  	background: 'white',
   },
   content: {
     // display: 'flex',
@@ -124,17 +125,25 @@ const useStyles = makeStyles({
   header: {
     fontFamily: 'Avenir',
     fontSize: '42px',
-    marginTop: 48,
+    paddingTop: 48,
     WebkitTextStroke: '3px',
+    color: '#000a4a',
   },
   image: {
   	width: '100%',
   },
-  root: {
+  container: {
     margin: '0 calc(10% + 32px)',
     maxWidth: 1200,
-    position: 'relative',
+    paddingBottom: 120,
+    // position: 'relative',
+    // top: 72,
+  },
+  root: {
+  	position: 'relative',
     top: 72,
+    background: '#f7ece9',
+    // paddingBottom: 120,
   },
   text: {
     fontSize: '14px',
@@ -155,23 +164,26 @@ function Clients() {
 
   return (
     <div className={classes.root}>
-      <div className={classes.header}>
-        Happy Clients
-      </div>
-      <Appbar selected={1} />
-      <div className={classes.content}>
-	      {clients.map((client) => (
-	      	<div className={classes.client}>
-	      		<img className={classes.image} src={client.image} />
-	      		<div className={classes.text}>
-	      			{client.text}
-	      		</div>
-	      		<div className={classes.name}>
-	      			- {client.name}
-	      		</div>
-	      	</div>
-	      ))}
+	    <div className={classes.container}>
+	      <div className={classes.header}>
+	        Happy Clients
+	      </div>
+	      <Appbar selected={1} />
+	      <div className={classes.content}>
+		      {clients.map((client) => (
+		      	<div className={classes.client}>
+		      		<img className={classes.image} src={client.image} />
+		      		<div className={classes.text}>
+		      			{client.text}
+		      		</div>
+		      		<div className={classes.name}>
+		      			- {client.name}
+		      		</div>
+		      	</div>
+		      ))}
+		    </div>
 	    </div>
+	    <Footer />
     </div>
   );
 }
