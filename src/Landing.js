@@ -354,7 +354,7 @@ function Landing() {
         </div>
         <Grow in={true} timeout={500}>
         <div className={classes.largeText}>
-          Buy your dream home.
+          Make offers like a boss.
         </div>
         </Grow>
         <Grow in={true} timeout={700} direction="right" mountOnEnter>

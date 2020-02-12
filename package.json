@@ -2,6 +2,7 @@
   "name": "halo",
   "version": "0.1.0",
   "homepage": "http://mheitman.github.io/halo",
+  "build": "react-scripts build && cp build/index.html build/404.html",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",

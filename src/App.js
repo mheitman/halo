@@ -18,24 +18,24 @@ function App() {
   // const classes = useStyles();
 
   return (
-    <Router>
+    <Router basename={`${process.env.PUBLIC_URL}/`}>
       <Switch>
-        <Route exact path='/halo'>
+        <Route exact path='/'>
           <Landing />
         </Route>
-        <Route path='/halo/about'>
+        <Route path='/about'>
           <About />
         </Route>
-        <Route path='/halo/clients'>
+        <Route path='/clients'>
           <Clients />
         </Route>
-        <Route path='/halo/partners'>
+        <Route path='/partners'>
           <Partners />
         </Route>
-        <Route path='/halo/contact'>
+        <Route path='/contact'>
           <Contact />
         </Route>
-        <Route path='/halo/apply'>
+        <Route path='/apply'>
           <Apply />
         </Route>
       </Switch>

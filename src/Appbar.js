@@ -60,24 +60,24 @@ function App({ selected }) {
     <div className={classes.root}>
       <div className={classes.left}>
         <div className={classes.logo}>
-          <Link to='/halo'>H</Link>
+          <Link to='/'>H</Link>
         </div>
       </div>
       <div className={classes.tabs}>
         <div className={classnames(classes.tab, selected === 0 && classes.selected)}>
-          <Link to='/halo/about'>About Halo</Link>
+          <Link to={process.env.PUBLIC_URL + '/about'}>About Halo</Link>
         </div>
         <div className={classnames(classes.tab, selected === 1 && classes.selected)}>
-          <Link to='/halo/clients'>Happy Clients</Link>
+          <Link to='/clients'>Happy Clients</Link>
         </div>
         <div className={classnames(classes.tab, selected === 2 && classes.selected)}>
-          <Link to='/halo/partners'>Partners</Link>
+          <Link to='/partners'>Partners</Link>
         </div>
         <div className={classnames(classes.tab, selected === 3 && classes.selected)}>
-          <Link to='/halo/contact'>Contact</Link>
+          <Link to='/contact'>Contact</Link>
         </div>
         <div className={classes.button}>
-          <FilledButton href='/halo/apply'>Apply Now</FilledButton>
+          <FilledButton href={process.env.PUBLIC_URL + '/apply'}>Apply Now</FilledButton>
         </div>
       </div>
     </div>
