@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/halo/static/css/main.6ea59c8b.chunk.css",
-    "main.js": "/halo/static/js/main.b5ad265e.chunk.js",
-    "main.js.map": "/halo/static/js/main.b5ad265e.chunk.js.map",
+    "main.js": "/halo/static/js/main.4dfe10ef.chunk.js",
+    "main.js.map": "/halo/static/js/main.4dfe10ef.chunk.js.map",
     "runtime-main.js": "/halo/static/js/runtime-main.7a4ca8c1.js",
     "runtime-main.js.map": "/halo/static/js/runtime-main.7a4ca8c1.js.map",
-    "static/js/2.b72fbc86.chunk.js": "/halo/static/js/2.b72fbc86.chunk.js",
-    "static/js/2.b72fbc86.chunk.js.map": "/halo/static/js/2.b72fbc86.chunk.js.map",
+    "static/js/2.5f293df1.chunk.js": "/halo/static/js/2.5f293df1.chunk.js",
+    "static/js/2.5f293df1.chunk.js.map": "/halo/static/js/2.5f293df1.chunk.js.map",
     "index.html": "/halo/index.html",
-    "precache-manifest.161dfdb5ee7957480648af0342370f81.js": "/halo/precache-manifest.161dfdb5ee7957480648af0342370f81.js",
+    "precache-manifest.9ae551ad6c42b92dc7b5c09fe702decb.js": "/halo/precache-manifest.9ae551ad6c42b92dc7b5c09fe702decb.js",
     "service-worker.js": "/halo/service-worker.js",
     "static/css/main.6ea59c8b.chunk.css.map": "/halo/static/css/main.6ea59c8b.chunk.css.map",
-    "static/js/2.b72fbc86.chunk.js.LICENSE.txt": "/halo/static/js/2.b72fbc86.chunk.js.LICENSE.txt",
+    "static/js/2.5f293df1.chunk.js.LICENSE.txt": "/halo/static/js/2.5f293df1.chunk.js.LICENSE.txt",
     "static/media/0.jpeg": "/halo/static/media/0.eb519520.jpeg",
     "static/media/1.jpeg": "/halo/static/media/1.0e7fd163.jpeg",
     "static/media/10.jpeg": "/halo/static/media/10.0d9a4c4e.jpeg",
@@ -29,6 +29,7 @@
     "static/media/Agents.png": "/halo/static/media/Agents.79656909.png",
     "static/media/Halo-Logo.png": "/halo/static/media/Halo-Logo.c336dba5.png",
     "static/media/agent_of_lender.png": "/halo/static/media/agent_of_lender.47a2f14a.png",
+    "static/media/iStock-Family in Living Room.jpg": "/halo/static/media/iStock-Family in Living Room.1ead536a.jpg",
     "static/media/iStock-Kid Running Front Hall.jpg": "/halo/static/media/iStock-Kid Running Front Hall.d0b34d79.jpg",
     "static/media/iStock-people.jpg": "/halo/static/media/iStock-people.c1738839.jpg",
     "static/media/kitchen.jpg": "/halo/static/media/kitchen.4d867cd9.jpg",
@@ -38,8 +39,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7a4ca8c1.js",
-    "static/js/2.b72fbc86.chunk.js",
+    "static/js/2.5f293df1.chunk.js",
     "static/css/main.6ea59c8b.chunk.css",
-    "static/js/main.b5ad265e.chunk.js"
+    "static/js/main.4dfe10ef.chunk.js"
   ]
 }
