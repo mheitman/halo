@@ -65,7 +65,7 @@ function App({ selected }) {
       </div>
       <div className={classes.tabs}>
         <div className={classnames(classes.tab, selected === 0 && classes.selected)}>
-          <Link to={process.env.PUBLIC_URL + '/about'}>About Halo</Link>
+          <Link to={'/about'}>About Halo</Link>
         </div>
         <div className={classnames(classes.tab, selected === 1 && classes.selected)}>
           <Link to='/clients'>Happy Clients</Link>
