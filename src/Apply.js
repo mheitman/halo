@@ -18,16 +18,20 @@ import StepContent from '@material-ui/core/StepContent';
 
 // import skyrise from './assets/skyrise.jpg'
 
+const DISPLAY_FONT = `'EB Garamond', serif`;
+
+
 const useStyles = makeStyles({
   button: {
     marginLeft: 32,
   },
   header: {
-    fontFamily: 'Avenir',
-    fontSize: '42px',
+    // fontFamily: 'Avenir',
+    fontSize: '64px',
     paddingTop: 48,
-    WebkitTextStroke: '3px',
+    WebkitTextStroke: '1px',
     color: '#000a4a',
+    fontFamily: DISPLAY_FONT,
   },
   container: {
     margin: '0 calc(10% + 32px)',
@@ -66,10 +70,12 @@ const useStyles = makeStyles({
     boxShadow: '0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)',
   },
   criteriaHeader: {
-    // fontSize: '22px',
-    fontFamily: 'Avenir',
-    margin: '16px 0',
-    WebkitTextStroke: '1px',
+    fontSize: '28px',
+    // fontFamily: 'Avenir',
+    margin: '24px 0 36px',
+    WebkitTextStroke: '0.5px',
+    fontFamily: DISPLAY_FONT,
+    // margin: 
   },
   requirement: {
     margin: '12px 0',
@@ -77,9 +83,12 @@ const useStyles = makeStyles({
     fontSize: '14px',
   },
   meetsQualifications: {
-    fontFamily: 'Avenir',
-    WebkitTextStroke: '1px',
-    marginBottom: -20,
+    // fontFamily: 'Avenir',
+    fontFamily: DISPLAY_FONT,
+    WebkitTextStroke: '0.5px',
+    marginTop: 32,
+    fontSize: '22px',
+    // marginBottom: -20,
   },
   registerButtons: {
     display: 'flex',

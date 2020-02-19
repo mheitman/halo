@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 
+import logo from './assets/Halo_logo_wh.png';
 // import './index.css';
 
 // import skyrise from './assets/skyrise.jpg'
@@ -37,6 +38,9 @@ const useStyles = makeStyles({
     letterSpacing: '16px',
     textAlign: 'center',
     textTransform: 'uppercase',
+  },
+  logoImage: {
+    height: 76,
   }
 });
 
@@ -46,7 +50,7 @@ function Footer() {
   return (
     <div className={classes.root}>
       <div className={classes.logo}>
-        Halo
+        <img src={logo} className={classes.logoImage} />
       </div>
     </div>
   );
