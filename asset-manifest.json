@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/halo/static/css/main.6ea59c8b.chunk.css",
-    "main.js": "/halo/static/js/main.0e2a3359.chunk.js",
-    "main.js.map": "/halo/static/js/main.0e2a3359.chunk.js.map",
+    "main.js": "/halo/static/js/main.3e15e08b.chunk.js",
+    "main.js.map": "/halo/static/js/main.3e15e08b.chunk.js.map",
     "runtime-main.js": "/halo/static/js/runtime-main.7a4ca8c1.js",
     "runtime-main.js.map": "/halo/static/js/runtime-main.7a4ca8c1.js.map",
-    "static/js/2.321864b4.chunk.js": "/halo/static/js/2.321864b4.chunk.js",
-    "static/js/2.321864b4.chunk.js.map": "/halo/static/js/2.321864b4.chunk.js.map",
+    "static/js/2.cfd78cb1.chunk.js": "/halo/static/js/2.cfd78cb1.chunk.js",
+    "static/js/2.cfd78cb1.chunk.js.map": "/halo/static/js/2.cfd78cb1.chunk.js.map",
     "index.html": "/halo/index.html",
-    "precache-manifest.3f414be8894277a4aa0313bd4e262034.js": "/halo/precache-manifest.3f414be8894277a4aa0313bd4e262034.js",
+    "precache-manifest.a34c2227560a5c7955c2e2c9b8d5f6a1.js": "/halo/precache-manifest.a34c2227560a5c7955c2e2c9b8d5f6a1.js",
     "service-worker.js": "/halo/service-worker.js",
     "static/css/main.6ea59c8b.chunk.css.map": "/halo/static/css/main.6ea59c8b.chunk.css.map",
-    "static/js/2.321864b4.chunk.js.LICENSE.txt": "/halo/static/js/2.321864b4.chunk.js.LICENSE.txt",
+    "static/js/2.cfd78cb1.chunk.js.LICENSE.txt": "/halo/static/js/2.cfd78cb1.chunk.js.LICENSE.txt",
     "static/media/0.jpeg": "/halo/static/media/0.eb519520.jpeg",
     "static/media/1.jpeg": "/halo/static/media/1.0e7fd163.jpeg",
     "static/media/10.jpeg": "/halo/static/media/10.0d9a4c4e.jpeg",
     "static/media/11.png": "/halo/static/media/11.74d35d55.png",
     "static/media/12.jpeg": "/halo/static/media/12.1f99d52f.jpeg",
     "static/media/13.jpeg": "/halo/static/media/13.ad5b9fa4.jpeg",
+    "static/media/14.png": "/halo/static/media/14.8cf0fa23.png",
     "static/media/2.jpeg": "/halo/static/media/2.7c9f9e16.jpeg",
     "static/media/3.jpeg": "/halo/static/media/3.69f3278d.jpeg",
     "static/media/4.jpeg": "/halo/static/media/4.bee70553.jpeg",
@@ -30,6 +31,7 @@
     "static/media/Halo-Logo.png": "/halo/static/media/Halo-Logo.c336dba5.png",
     "static/media/Halo_logo_wh.png": "/halo/static/media/Halo_logo_wh.899a0e5f.png",
     "static/media/agent_of_lender.png": "/halo/static/media/agent_of_lender.47a2f14a.png",
+    "static/media/facebook.jpg": "/halo/static/media/facebook.08f52c43.jpg",
     "static/media/iStock-Family in Living Room.jpg": "/halo/static/media/iStock-Family in Living Room.1ead536a.jpg",
     "static/media/iStock-Kid Running Front Hall.jpg": "/halo/static/media/iStock-Kid Running Front Hall.d0b34d79.jpg",
     "static/media/iStock-people.jpg": "/halo/static/media/iStock-people.c1738839.jpg",
@@ -40,8 +42,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7a4ca8c1.js",
-    "static/js/2.321864b4.chunk.js",
+    "static/js/2.cfd78cb1.chunk.js",
     "static/css/main.6ea59c8b.chunk.css",
-    "static/js/main.0e2a3359.chunk.js"
+    "static/js/main.3e15e08b.chunk.js"
   ]
 }
