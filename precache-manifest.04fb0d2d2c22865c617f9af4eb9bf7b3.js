@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b9f657ee0a7b7f709001135b786f7f9",
+    "revision": "f68dab7e35522235fba081c04e1ba8c6",
     "url": "/halo/index.html"
   },
   {
-    "revision": "6e98021179ba8b4dd6e9",
+    "revision": "4fe6f3ac371899731670",
     "url": "/halo/static/css/main.3056c59f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/halo/static/js/2.acf88d98.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6e98021179ba8b4dd6e9",
-    "url": "/halo/static/js/main.efd982e2.chunk.js"
+    "revision": "4fe6f3ac371899731670",
+    "url": "/halo/static/js/main.e334f3ac.chunk.js"
   },
   {
     "revision": "6e22586d8eda6aacd266",
