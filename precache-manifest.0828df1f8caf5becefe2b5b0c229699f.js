@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6c710016683f5dc9d7f2d1d489bbfaba",
+    "revision": "2c91ce58fa22e25a83bca9ce66a8dbf4",
     "url": "/halo/index.html"
   },
   {
-    "revision": "28259dab4ea5b3dcb0ba",
+    "revision": "b764f8ace5f48742f256",
     "url": "/halo/static/css/main.3056c59f.chunk.css"
   },
   {
-    "revision": "6d7516246c3d5fa340c5",
-    "url": "/halo/static/js/2.c106fdc6.chunk.js"
+    "revision": "4428681ccbde6726d72f",
+    "url": "/halo/static/js/2.acf88d98.chunk.js"
   },
   {
     "revision": "e933f8dbfdf496cb72e495663a499a00",
-    "url": "/halo/static/js/2.c106fdc6.chunk.js.LICENSE.txt"
+    "url": "/halo/static/js/2.acf88d98.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "28259dab4ea5b3dcb0ba",
-    "url": "/halo/static/js/main.62c606f8.chunk.js"
+    "revision": "b764f8ace5f48742f256",
+    "url": "/halo/static/js/main.598243ca.chunk.js"
   },
   {
     "revision": "6e22586d8eda6aacd266",
