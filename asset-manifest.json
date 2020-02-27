@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/halo/static/css/main.3056c59f.chunk.css",
-    "main.js": "/halo/static/js/main.78e7f7ca.chunk.js",
-    "main.js.map": "/halo/static/js/main.78e7f7ca.chunk.js.map",
+    "main.js": "/halo/static/js/main.d84464e9.chunk.js",
+    "main.js.map": "/halo/static/js/main.d84464e9.chunk.js.map",
     "runtime-main.js": "/halo/static/js/runtime-main.7a4ca8c1.js",
     "runtime-main.js.map": "/halo/static/js/runtime-main.7a4ca8c1.js.map",
     "static/js/2.94fca1b0.chunk.js": "/halo/static/js/2.94fca1b0.chunk.js",
     "static/js/2.94fca1b0.chunk.js.map": "/halo/static/js/2.94fca1b0.chunk.js.map",
     "index.html": "/halo/index.html",
-    "precache-manifest.efe7fdfd408fc550c495d2f006330d8f.js": "/halo/precache-manifest.efe7fdfd408fc550c495d2f006330d8f.js",
+    "precache-manifest.271c9292fc62b6986de2ebca676df23d.js": "/halo/precache-manifest.271c9292fc62b6986de2ebca676df23d.js",
     "service-worker.js": "/halo/service-worker.js",
     "static/css/main.3056c59f.chunk.css.map": "/halo/static/css/main.3056c59f.chunk.css.map",
     "static/js/2.94fca1b0.chunk.js.LICENSE.txt": "/halo/static/js/2.94fca1b0.chunk.js.LICENSE.txt",
@@ -44,6 +44,6 @@
     "static/js/runtime-main.7a4ca8c1.js",
     "static/js/2.94fca1b0.chunk.js",
     "static/css/main.3056c59f.chunk.css",
-    "static/js/main.78e7f7ca.chunk.js"
+    "static/js/main.d84464e9.chunk.js"
   ]
 }
