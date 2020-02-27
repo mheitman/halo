@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/halo/static/css/main.3056c59f.chunk.css",
-    "main.js": "/halo/static/js/main.25bd4f6f.chunk.js",
-    "main.js.map": "/halo/static/js/main.25bd4f6f.chunk.js.map",
+    "main.js": "/halo/static/js/main.d468abcb.chunk.js",
+    "main.js.map": "/halo/static/js/main.d468abcb.chunk.js.map",
     "runtime-main.js": "/halo/static/js/runtime-main.7a4ca8c1.js",
     "runtime-main.js.map": "/halo/static/js/runtime-main.7a4ca8c1.js.map",
-    "static/js/2.acf88d98.chunk.js": "/halo/static/js/2.acf88d98.chunk.js",
-    "static/js/2.acf88d98.chunk.js.map": "/halo/static/js/2.acf88d98.chunk.js.map",
+    "static/js/2.94fca1b0.chunk.js": "/halo/static/js/2.94fca1b0.chunk.js",
+    "static/js/2.94fca1b0.chunk.js.map": "/halo/static/js/2.94fca1b0.chunk.js.map",
     "index.html": "/halo/index.html",
-    "precache-manifest.83ca14b03d30eae39a680385de17081e.js": "/halo/precache-manifest.83ca14b03d30eae39a680385de17081e.js",
+    "precache-manifest.a0b318e919b493f25095e7bd548b1020.js": "/halo/precache-manifest.a0b318e919b493f25095e7bd548b1020.js",
     "service-worker.js": "/halo/service-worker.js",
     "static/css/main.3056c59f.chunk.css.map": "/halo/static/css/main.3056c59f.chunk.css.map",
-    "static/js/2.acf88d98.chunk.js.LICENSE.txt": "/halo/static/js/2.acf88d98.chunk.js.LICENSE.txt",
+    "static/js/2.94fca1b0.chunk.js.LICENSE.txt": "/halo/static/js/2.94fca1b0.chunk.js.LICENSE.txt",
     "static/media/0.jpeg": "/halo/static/media/0.eb519520.jpeg",
     "static/media/1.jpeg": "/halo/static/media/1.0e7fd163.jpeg",
     "static/media/10.jpeg": "/halo/static/media/10.0d9a4c4e.jpeg",
@@ -42,8 +42,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7a4ca8c1.js",
-    "static/js/2.acf88d98.chunk.js",
+    "static/js/2.94fca1b0.chunk.js",
     "static/css/main.3056c59f.chunk.css",
-    "static/js/main.25bd4f6f.chunk.js"
+    "static/js/main.d468abcb.chunk.js"
   ]
 }
