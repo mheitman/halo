@@ -1,10 +1,9 @@
 import React from 'react';
 
+import Fade from '@material-ui/core/Fade';
 import { makeStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
-import classnames from 'classnames';
+
 import Appbar from './Appbar.js';
-import Button from './Button.js';
 import Footer from './Footer.js';
 
 import image0 from './assets/clients/0.jpeg';
@@ -22,9 +21,8 @@ import image11 from './assets/clients/11.png';
 import image12 from './assets/clients/12.jpeg';
 import image13 from './assets/clients/13.jpeg';
 
-// import './index.css';
+import { DISPLAY_FONT } from './theme';
 
-// import skyrise from './assets/skyrise.jpg'
 
 const clients = [
 	{
@@ -104,30 +102,20 @@ const useStyles = makeStyles({
     marginLeft: 32,
   },
   client: {
-  	// width: 280,
-  	margin: '16px 8px',
-  	// margin: '16px 0',
-  	display: 'inline-block',
-    // borderRadius: '12px',
-  	// boxShadow: '0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)',
   	background: 'white',
+  	display: 'inline-block',
+  	margin: '16px 8px',
   },
   content: {
-    // display: 'flex',
-    // justifyContent: 'space-around',
-    // alignItems: 'center',
-    // flexWrap: 'wrap',
-    marginTop: 48,
-
     columnCount: 3,
-    // columnGap: '12px',
+    marginTop: 24,
   },
   header: {
-    fontFamily: 'Avenir',
-    fontSize: '42px',
-    paddingTop: 48,
-    WebkitTextStroke: '3px',
     color: '#000a4a',
+    fontFamily: DISPLAY_FONT,
+    fontSize: '48px',
+    paddingTop: 64,
+    WebkitTextStroke: '1px',
   },
   image: {
   	width: '100%',
@@ -136,28 +124,27 @@ const useStyles = makeStyles({
     margin: '0 calc(10% + 32px)',
     maxWidth: 1200,
     paddingBottom: 120,
-    // position: 'relative',
-    // top: 72,
   },
   root: {
-  	position: 'relative',
-    top: 72,
     background: '#f7ece9',
-    // paddingBottom: 120,
+  	position: 'relative',
+    top: 96,
   },
   text: {
-    fontSize: '14px',
-    lineHeight: '20px',
     color: 'rgba(0, 0, 0, 0.7)',
-    padding: 24,
+    fontSize: '14px',
+    lineHeight: '28px',
+    margin: 24,
   },
   name: {
+  	fontFamily: DISPLAY_FONT,
+    fontSize: '18px',
+  	margin: '24px 16px',
   	textAlign: 'right',
-  	padding: '24px 16px',
-  	fontFamily: 'Avenir',
-    WebkitTextStroke: '1px',
+    WebkitTextStroke: '0.5px',
   }
 });
+
 
 function Clients() {
   const classes = useStyles();
@@ -169,10 +156,11 @@ function Clients() {
 	        Happy Clients
 	      </div>
 	      <Appbar selected={1} />
+	      <Fade in={true} timeout={600}>
 	      <div className={classes.content}>
-		      {clients.map((client) => (
-		      	<div className={classes.client}>
-		      		<img className={classes.image} src={client.image} />
+		      {clients.map((client, ind) => (
+		      	<div key={ind} className={classes.client}>
+		      		<img className={classes.image} src={client.image} alt="" />
 		      		<div className={classes.text}>
 		      			{client.text}
 		      		</div>
@@ -182,6 +170,7 @@ function Clients() {
 		      	</div>
 		      ))}
 		    </div>
+		    </Fade>
 	    </div>
 	    <Footer />
     </div>

@@ -1,48 +1,33 @@
 import React from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
-import classnames from 'classnames';
 
 import logo from './assets/Halo_logo_wh.png';
-// import './index.css';
 
-// import skyrise from './assets/skyrise.jpg'
 
 const useStyles = makeStyles({
-  root: {
-    height: 480,
-    // background: 'rgba(0, 0, 0, 0.9)',
-    background: '#010623',
-    // marginTop: 240,
-    // position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 0,
-    // paddingTop: 200,
-    // display: 'none',
-  },
   logo: {
-    paddingTop: 120,
-    // padding: '40px 0',
-    // background: 'white',
-    // color: 'white',
-    textAlign: 'center',
-    // fontSize: '28px',
-    // background: 'red',
-    // color: 'black',
     color: '#ffffff44',
     fontFamily: 'Avenir',
     fontSize: '42px',
     fontWeight: 'bold',
     letterSpacing: '16px',
+    paddingTop: 120,
     textAlign: 'center',
     textTransform: 'uppercase',
   },
   logoImage: {
     height: 76,
-  }
+  },
+  root: {
+    background: '#010623',
+    bottom: 0,
+    height: 480,
+    left: 0,
+    right: 0,
+  },
 });
+
 
 function Footer() {
   const classes = useStyles();
@@ -50,7 +35,7 @@ function Footer() {
   return (
     <div className={classes.root}>
       <div className={classes.logo}>
-        <img src={logo} className={classes.logoImage} />
+        <img src={logo} className={classes.logoImage} alt="" />
       </div>
     </div>
   );

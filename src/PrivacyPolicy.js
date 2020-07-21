@@ -1,41 +1,29 @@
 import React from 'react';
 
-import { makeStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
-import classnames from 'classnames';
-import Appbar from './Appbar.js';
-import Button from './Button.js';
-
-import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import classnames from 'classnames';
+import { makeStyles } from '@material-ui/core/styles';
 
-// import './index.css';
+import { DISPLAY_FONT } from './theme';
 
-// import skyrise from './assets/skyrise.jpg'
 
 const useStyles = makeStyles({
+  bold: {
+    WebkitTextStroke: '0.5px',
+  },
   button: {
     marginLeft: 32,
   },
+  content: {
+    paddingBottom: 32,
+  },
   header: {
-    fontFamily: 'Avenir',
-    // fontSize: '18px',
-    // marginTop: 48,
+    fontFamily: DISPLAY_FONT,
+    fontSize: '18px',
     margin: '20px 0 4px',
-    WebkitTextStroke: '1px',
-  },
-  title: {
-    fontFamily: 'Avenir',
-    fontSize: '24px',
-    WebkitTextStroke: '1px',
-    // margin: '12px 0',
-  },
-  text: {
-    fontSize: '14px',
-    lineHeight: '24px',
-    // margin: '12px 0',
-    marginBottom: 12,
+    WebkitTextStroke: '0.5px',
   },
   root: {
     margin: '0 calc(10% + 32px)',
@@ -43,15 +31,18 @@ const useStyles = makeStyles({
     position: 'relative',
     top: 72,
   },
-  content: {
-    paddingBottom: 32,
-    // padding: 32,
-    // maxHeight: 600,
-  },
-  bold: {
+  title: {
+    fontFamily: DISPLAY_FONT,
+    fontSize: '32px',
     WebkitTextStroke: '0.5px',
-  }
+  },
+  text: {
+    fontSize: '14px',
+    lineHeight: '24px',
+    marginBottom: 12,
+  },
 });
+
 
 function PrivacyPolicy({ open, setOpen }) {
   const classes = useStyles();

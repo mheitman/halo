@@ -1,29 +1,21 @@
-import React, { useLayoutEffect, useRef, createRef } from 'react';
+import React, { useRef, createRef } from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHandHoldingUsd, faHome, faCalendarCheck, faUserFriends } from '@fortawesome/free-solid-svg-icons'
 
 import Appbar from './Appbar';
-import Footer from './Footer';
 
-import agents from './assets/Agents.png';
-import home from './assets/home.png';
-import skyrise from './assets/skyrise.jpg';
 
 const useStyles = makeStyles({
   container: {
-    display: 'flex',
+    display: 'none',
     paddingBottom: 120,
   },
   content: {
-    // marginTop: 120,
     padding: '72px 64px',
   },
   header: {
     fontFamily: 'Avenir',
     fontSize: '42px',
-    // marginTop: 120,
     WebkitTextStroke: '3px',
   },
   root: {
@@ -32,48 +24,44 @@ const useStyles = makeStyles({
     position: 'relative',
     top: 72,
   },
+  section: {
+    marginTop: -72,
+    paddingTop: 72,
+  },
+  sectionHeader: {
+    fontFamily: 'Avenir',
+    fontSize: '24px',
+    margin: '32px 0 4px',
+    WebkitTextStroke: '2px',
+  },
   sectionNavContainer: {
-    textAlign: 'right',
+    alignSelf: 'flex-start',
     marginTop: 152,
     minWidth: 200,
     position: 'sticky',
+    textAlign: 'right',
     top: 220,
-    alignSelf: 'flex-start',
-    // margin
   },
   sectionNavLink: {
     color: '#000a4a',
+    cursor: 'pointer',
     fontSize: '20px',
     fontFamily: 'Avenir',
-    WebkitTextStroke: '2px',
     margin: '12px 0',
-    cursor: 'pointer',
-  },
-  sectionHeader: {
-    fontSize: '24px',
-    fontFamily: 'Avenir',
     WebkitTextStroke: '2px',
-    margin: '32px 0 4px',
-  },
-  sectionText: {
-    // fontSize: '14px',
-    lineHeight: '36px',
-    color: 'rgba(0, 0, 0, 0.7)',
   },
   sectionSubHeader: {
-    fontSize: '18px',
     fontFamily: 'Avenir',
-    WebkitTextStroke: '1px',
+    fontSize: '18px',
     margin: '24px 0 4px',
+    WebkitTextStroke: '1px',
   },
-  section: {
-    // transform: 'translateY(-120px)'
-    // paddingTop: 200,
-    // marginTop: -200,
-    paddingTop: 72,
-    marginTop: -72,
-  }
+  sectionText: {
+    color: 'rgba(0, 0, 0, 0.7)',
+    lineHeight: '36px',
+  },
 });
+
 
 function Partners() {
   const classes = useStyles();
@@ -84,7 +72,6 @@ function Partners() {
   }
 
   return (
-    <div>
     <div className={classes.root}>
       <Appbar selected={2} />
       <div className={classes.container}>
@@ -130,8 +117,6 @@ function Partners() {
         </div>
       </div>
     </div>
-      <Footer />
-      </div>
   );
 }
 

@@ -1,110 +1,97 @@
 import React, { useState } from 'react';
 
-import { makeStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
-import classnames from 'classnames';
-import Appbar from './Appbar.js';
-import { FilledButton } from './Button.js';
-import Footer from './Footer.js';
 import TextField from '@material-ui/core/TextField';
+import { makeStyles } from '@material-ui/core/styles';
 
+import Appbar from './Appbar.js';
+import Footer from './Footer.js';
 import PrivacyPolicy from './PrivacyPolicy';
+import { FilledButton } from './Button.js';
 
-// import './index.css';
+import { DISPLAY_FONT } from './theme';
 
-// import skyrise from './assets/skyrise.jpg'
 
 const useStyles = makeStyles({
   button: {
     marginLeft: 32,
   },
+  container: {
+    minHeight: '100vh',
+    margin: '0 10%',
+    maxWidth: 1200,
+  },
+  content: {
+    alignItems: 'center',
+    display: 'flex',
+    justifyContent: 'space-around',
+  },
+  form: {
+    background: 'white',
+    boxShadow: '0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)',
+    flexGrow: 1,
+    padding: '48px 48px',
+    maxWidth: 720,
+  },
+  emphasisText: {
+    borderBottom: '2px solid black',
+    fontWeight: 'bold',
+    paddingBottom: 4,
+  },
+  formSection: {
+    display: 'flex',
+    margin: '12px 0',
+  },
   header: {
-    fontFamily: 'Avenir',
-    fontSize: '42px',
-    paddingTop: 48,
-    WebkitTextStroke: '3px',
+    color: '#000a4a',
+    fontFamily: DISPLAY_FONT,
+    fontSize: '48px',
+    paddingTop: 64,
+    WebkitTextStroke: '1px',
+  },
+  privacyPolicyText: {
+    cursor: 'pointer',
+    fontSize: '14px',
+    margin: '24px 12px',
+    textAlign: 'right',
+  },
+  registerButton: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    marginRight: 12,
   },
   root: {
     background: '#f7ece9',
     position: 'relative',
-    top: 72,
-  },
-  container: {
-    margin: '0 10%',
-    maxWidth: 1200,
-    minHeight: '100vh',
-    // position: 'relative',
-    // top: 72,
-  },
-  form: {
-    padding: '48px 48px',
-    // margin: '48px 0',
-    boxShadow: '0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)',
-    maxWidth: 640,
-    flexGrow: 1,
-    background: 'white',
-  },
-  textField: {
-    // width: '48%',
-    flexGrow: 1,
-    marginRight: 12,
-  },
-  formSection: {
-    margin: '12px 0',
-    display: 'flex',
-  },
-  registerButton: {
-    // float: 'right',
-    marginRight: 12,
-    display: 'flex',
-    justifyContent: 'flex-end',
-    // marginTop: 24,
-  },
-  privacyPolicyText: {
-    margin: '24px 12px',
-    textAlign: 'right',
-    fontSize: '14px',
-    cursor: 'pointer',
-    // marginRight: 12,
-  },
-  content: {
-    display: 'flex',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-  },
-  textContainer: {
-    maxWidth: '280px',
-    marginRight: 24,
-    textAlign: 'right',
-  },
-  text: {
-    fontFamily: 'Avenir',
-    fontSize: '28px',
-    WebkitTextStroke: '2px',
-    // color: '#6400ff',
-    color: '#000a4a',
+    top: 96,
   },
   subText: {
-    marginTop: 24,
     lineHeight: '28px',
+    marginTop: 24,
   },
-  emphasisText: {
-    // textDecoration: 'underline',
-    borderBottom: '2px solid black',
-    paddingBottom: 4,
-    fontWeight: 'bold',
-  }
+  text: {
+    color: '#000a4a',
+    fontFamily: DISPLAY_FONT,
+    fontSize: '36px',
+    WebkitTextStroke: '0.5px',
+  },
+  textContainer: {
+    marginRight: 24,
+    maxWidth: '280px',
+    textAlign: 'right',
+  },
+  textField: {
+    flexGrow: 1,
+    marginRight: 12,
+  },
 });
 
-const REQUIRED_FIELDS = [
-]
 
 function Contact() {
   const classes = useStyles();
 
   const [form, setForm] = useState({});
   const [open, setOpen] = useState(false);
-  const [displayError, setDisplayError] = useState(false);
+  const [displayError] = useState(false);
 
   const handleInput = (name) => (event) => {
     setForm({
@@ -119,10 +106,6 @@ function Contact() {
 
   const isEmpty = (name) => {
     return !(name in form) || form[name] === '';
-  }
-
-  const validate = () => {
-
   }
 
   return (
@@ -147,52 +130,52 @@ function Contact() {
                 className={classes.textField}
                 required
                 error={displayError && isEmpty('firstName')}
-                label='First Name'
+                label="First Name"
                 onChange={handleInput('firstName')}
-                variant='outlined' />
+                variant="outlined" />
               <TextField
                 className={classes.textField}
                 required
-                label='Last Name'
+                label="Last Name"
                 onChange={handleInput('lastName')}
-                variant='outlined' />
+                variant="outlined" />
             </div>
             <div className={classes.formSection}>
               <TextField
                 className={classes.textField}
                 required
                 helperText=''
-                label='Email'
-                variant='outlined'
+                label="Email"
+                variant="outlined"
                 onChange={handleInput('email')} />
               <TextField
                 className={classes.textField}
                 required
-                label='Phone'
-                variant='outlined'
+                label="Phone"
+                variant="outlined"
                 onChange={handleInput('phone')} />
             </div>
             <div className={classes.formSection}>
               <TextField
                 className={classes.textField}
                 required
-                label='What city do you want to buy a house?'
-                variant='outlined'
+                label="What city do you want to buy a house?"
+                variant="outlined"
                 onChange={handleInput('buyCity')} />
               <TextField
                 className={classes.textField}
                 required
-                label='What state do you want to buy a house?'
-                variant='outlined'
+                label="What state do you want to buy a house?"
+                variant="outlined"
                 onChange={handleInput('buyState')} />
             </div>
             <div className={classes.formSection}>
               <TextField
                 className={classes.textField}
                 required
-                label='What is your credit score?'
-                type='number'
-                variant='outlined'
+                label="What is your credit score?"
+                type="number"
+                variant="outlined"
                 onChange={handleInput('creditScore')} />
             </div>
             <div className={classes.privacyPolicyText}>
